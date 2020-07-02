@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-config-server
+  profiles:
+    active:
+    - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://F:/repository_git/repository/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
